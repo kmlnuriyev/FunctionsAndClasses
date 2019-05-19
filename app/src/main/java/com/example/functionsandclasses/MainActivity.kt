@@ -16,8 +16,14 @@ class MainActivity : AppCompatActivity() {
 
     fun saveClick(view:View) {
 
+        val name = nameText.text.toString()
+        val surname = surnameText.text.toString()
+        var age:Int? = null
+        if (!ageText.text.toString().equals(""))
+            age = parseInt(ageText.text.toString())
 
-        val kamal = User(nameText.text.toString(), surnameText.text.toString(), parseInt(ageText.text.toString()))
+
+        val kamal = User(name, surname, age)
         headerText.text = "Welcome Mr. " + kamal.name + " " + kamal.surname
 
     }
