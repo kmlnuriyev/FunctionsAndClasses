@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val kamal = User(nameText.text.toString(), surnameText.text.toString(), parseInt(ageText.text.toString()))
-        headerText.text = "Welcome Mr. " + kamal.name + " " + kamal.surname
+        headerText.text = "Welcome Mrr. " + kamal.name + " " + kamal.surname
 
     }
 
