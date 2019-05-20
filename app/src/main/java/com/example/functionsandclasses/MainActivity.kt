@@ -19,12 +19,16 @@ class MainActivity : AppCompatActivity() {
         val name = nameText.text.toString()
         val surname = surnameText.text.toString()
         var age:Int? = null
-        if (!ageText.text.toString().equals(""))
+
+        if (ageText.text.toString() != "") {
+
             age = parseInt(ageText.text.toString())
+
+        }
 
 
         val kamal = User(name, surname, age)
-        headerText.text = "Welcome Mr. " + kamal.name + " " + kamal.surname
+        headerText.text = "Welcome Mr. " + kamal.name + " " + kamal.surname + " " + age
 
     }
 
